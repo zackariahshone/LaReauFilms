@@ -12,23 +12,7 @@
 <script>
     $(document).ready(function () {
 
-        $(".hero-image").hide().fadeIn(1500);
-        //$('.box').fadeIn(2500);
-
-        $(".box").hide()
-            .delay(1500)
-            .queue(function (next) {
-                $(this).fadeIn(1500);
-                next();
-            });
-       /* $(".menu")
-            .hide()
-            .delay(3000)
-            .queue(function (next) {
-                $(this).fadeIn(1500);
-                next();
-            });
-         */        
+        $(".hero-image").hide().fadeIn(1500);  
     });
        
     function openNav() {
@@ -58,10 +42,7 @@
                 <a href="contact.html">Contact</a>
             </div>
         </div>
-        <div class="box">
-
-
-        </div>
+       
         <div class="container">
             <p>LaReau Films is a New Orleans based
                 video production company. We are a

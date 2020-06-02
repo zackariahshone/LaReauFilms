@@ -6,10 +6,20 @@ body, html {
     margin: 0;
     color:#FFDA4A;
     font-family: Arial, Helvetica, sans-serif;
-    
-
   }
-  
+  /* styles the top left logo */
+  #logo{
+    width: 250px;
+   margin-left:3%;
+    padding-top:20px;
+  }
+  /* individual element style */
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+  /* Style for hero image */
   .hero-image {
     /*background-image: url("../img/2ndHalf.png"):*/
     background-color: gray;
@@ -20,42 +30,26 @@ body, html {
    
     margin-bottom:0;
   }
-  
-  
-  img{
-    max-width: 100%;
-    max-height: 100%;
-    display: block; /* remove extra space below image */
-}
-.hero-image .menu{
-  text-align: right;
-  display: contents;
-}
-
+  /* only shows on mobile view*/
+  #open{
+    display: none;
+  }
+  #close{
+    display: none;
+  }
+  /* displays on desktop/laptop */
+  .hero-image .menu{
+    text-align: right;
+    display: contents;
+  }
+ 
 .menu a{
   color: #FFDA4A;
   text-align: right;
   text-decoration: none;
   margin-right: 7%;
-  
 }
-
-.box{
-    width: 50%;       
-   /* margin-top: 15%;*/
-    margin: auto;
-}    
-#open{
-  display: none;
-}
-#close{
-  display: none;
-}
-#logo{
-  width: 250px;
- margin-left:3%;
-  padding-top:20px;
-}
+/* main container style */
 .container{
   width:100%;
   height: auto;
@@ -63,20 +57,19 @@ body, html {
   margin-top:5%;
   background-attachment: fixed;
   text-align: left;
-  
 }
 .container p{
   font-size: 30px;
   padding-left: 3%;
   padding-right:65%;
 }
+/* Style for logos */
 .clients{
   float: left;
   width: 25%;
   padding: 5px;
 
 }
-
 .row{
   margin-left:15%;
 }
@@ -86,14 +79,16 @@ body, html {
   display: table;
 }
 
+/* box under video */
 .mochBox{
   margin:auto;
   width: 70%;
-  background-color:white;
+  background-color: black;
 }
 .mochBox video{
   max-width: 100%;
 }
+/* footer style */
 .footer{
   background-color: black;
   width:100%;
@@ -109,18 +104,12 @@ body, html {
 }
   
   @media only screen and (max-width: 800px){
-
-    .hero-image{
-      width: 100%;
-    }
+    /* tablet style */
+    /* makes the logo smaller on tablet */
     #logo{
       width:200px;
     }
-    .box{
-      margin: auto;
-      width:100%;
-      font-size: 10px;
-    }
+    /* what covers the page when mobile menu is clicked */
     .overlay {
       height: 100%;
       width: 0;
@@ -133,7 +122,6 @@ body, html {
       overflow-x: hidden;
       transition: 0.5s;
     }
-    
     .overlay-content {
       position: relative;
       top: 25%;
@@ -141,7 +129,7 @@ body, html {
       text-align: center;
       margin-top: 30px;
     }
-    
+    /* cover link style */
     .overlay a {
       padding: 8px;
       text-decoration: none;
@@ -155,13 +143,14 @@ body, html {
     .overlay a:hover, .overlay a:focus {
       color: #f1f1f1;
     }
-    
+    /* the little X */
     .overlay .closebtn {
       position: absolute;
       top: 20px;
       right: 45px;
       font-size: 60px;
     }
+    /* the three horizontal lines */
     #open{
       display: block;
       float: right;
@@ -169,6 +158,7 @@ body, html {
       padding-top:1%;
       
     }
+    /* X is allowed to show */
     #close{
       display: block;
     }
@@ -189,6 +179,7 @@ body, html {
       font-size: 15px;
     }
    @media screen and (max-height: 450px) {
+     /* small changes for very small screens */
   .overlay a {font-size: 20px}
   .overlay .closebtn {
   font-size: 40px;
