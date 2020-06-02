@@ -12,6 +12,9 @@
       background-position: center;
       background-size: cover;
     }
+    #open, #close{
+      display: none;
+  }
     #logo{
         width: 250px;
         margin-left:3%;
@@ -66,9 +69,7 @@ h1{
    text-align: center;
    margin-bottom:3%;
 }
-#open, #close{
-    display: none;
-}
+
 
 @media screen and (max-width: 800px){
     .overlay {
