@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/studio.css">
+    <title>LP Studio</title>
+</head>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0";
+    }
+</script>
+
+<body>
+    <span id='open' style="font-size:30px;cursor:pointer; color:black;" onclick="openNav()">&#9776;</span>
+        <a href="index.html"><img id='logo' src="img/LaReauFilms_Logo.png" alt=""></a>
+        <div id="myNav" class="overlay">
+            <a id="close" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id='nav' style="text-align: right;" class="menu">
+                <a href="studio.html">Our Work</a>
+                <a href="services.html">Services</a>
+                <a href="whoAmI.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <h1 style="color:#FFDA4A; text-align: center;">Our Work</h1>
+        <div class="row">
+            <div class="column" style="background-color:#d6bd6d;">
+                <video controls src="img/Shays_Anthem_Landscape_2019_11_15_1127.mp4"></video>
+            </div>
+            <div class="column" style="background-color:rgb(66, 49, 49);">
+                <video controls>
+                    <source src="img/video2.mov">
+                    <source src="img/video2.mov" type="video/ogg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="background-color:#d6bd6d;">
+                <video controls>
+                    <source src="img/LaReauFilms_DemoReel_2020_04_11_1.mp4">
+                </video>
+            </div>
+            <div class="column" style="background-color:#d6bd6d;">
+                <video controls>
+                    <source src="img/LaReauFilms_DemoReel_2020_04_11_1.mp4">
+                </video>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="background-color:#d6bd6d;">
+                <video controls>
+                    <source src="img/LaReauFilms_DemoReel_2020_04_11_1.mp4">
+                </video>
+            </div>
+            <div class="column" style="background-color:#d6bd6d;">
+                <video controls>
+                    <source src="img/LaReauFilms_DemoReel_2020_04_11_1.mp4">
+                </video>
+            </div>
+        </div>
+
+
+    </div>
+    <div class='vidInfo'>
+        <h3>Let's Work Together</h3>
+        <button>Contact Us</button>
+    </div>
+
+</body>
+
+</html>

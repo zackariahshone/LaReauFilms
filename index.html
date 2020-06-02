@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/public/Jscript/home.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>LaReau Productions</title>
+</head>
+<script>
+    $(document).ready(function () {
+
+        $(".hero-image").hide().fadeIn(1500);
+        //$('.box').fadeIn(2500);
+
+        $(".box").hide()
+            .delay(1500)
+            .queue(function (next) {
+                $(this).fadeIn(1500);
+                next();
+            });
+       /* $(".menu")
+            .hide()
+            .delay(3000)
+            .queue(function (next) {
+                $(this).fadeIn(1500);
+                next();
+            });
+         */        
+    });
+       
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0";
+
+        //newMenu.style.textAlign(right, top); 
+        //menu.style.width = "0%";
+    }
+
+</script>
+
+<body>
+
+    <div class="hero-image">
+        <span id='open' style="font-size:30px;cursor:pointer; color:black;" onclick="openNav()">&#9776;</span>
+        <a href="index.html"><img id='logo' src="img/LaReauFilms_Logo.png" alt=""></a>
+        <div id="myNav" class="overlay">
+            <a id="close" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id='nav' style="text-align: right;" class="menu">
+                <a href="studio.html">Our Work</a>
+                <a href="services.html">Services</a>
+                <a href="whoAmI.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="box">
+
+
+        </div>
+        <div class="container">
+            <p>LaReau Films is a New Orleans based
+                video production company. We are a
+                team of creators, technical wizards
+                and passionate storytellers.</p>
+        </div>
+        <div class="container">
+            <div class="mochBox">
+                <video poster="img/videoCover.png" controls>
+                    <source src="img/LaReauFilms_DemoReel_2020_04_11_1.mp4">
+                </video>
+            </div>
+
+
+            <h2 style="text-align: center;">Our Clients: </h2>
+            <div class="row">
+                <div class="clients">
+                    <img src="img/FullColorLogo.png" alt="">
+                </div>
+                <div class="clients">
+                    <img src="img/alphaLogo.png" alt="">
+                </div>
+                <div class="clients">
+                    <img src="img/palominoLogo.png" alt="logo">
+                </div>
+                <div class="clients">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="clients">
+                    <img src="img/sofabLogo.jpg" alt="">
+                </div>
+                <div class="clients">
+                    
+                    <img src="img/defenderLogo.png" alt="">
+                </div>
+                <div class="clients">
+                   <img src="img/tulaneLogo.png" alt="">
+                </div>
+                <div class="clients">
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+        <a href="studio.html">Our Work</a>
+        <a href="services.html">Services</a>
+        <a href="whoAmI.html">About</a>
+        <a href="contact.html">Contact</a>
+            </div>
+        
+    </div>
+</body>
+
+</html>

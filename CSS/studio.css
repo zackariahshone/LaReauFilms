@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+  }
+  body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#d6bd6d;
+      background-color: gray;
+     
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    #logo{
+        width: 250px;
+        margin-left:3%;
+        padding-top:20px;
+      }
+    .menu{
+        text-align: right;
+        color:#FFDA4A;
+    }
+.menu a{
+    color:#FFDA4A;
+    text-align: right;
+    text-decoration: none;
+    margin-right: 7%;
+}
+h1{
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row{
+    margin: 8px -16px;
+    width:95%;
+    
+}
+.column{
+    float:left;
+    width: 41%;
+    height: fit-content;
+    padding: 0;
+    background-color: black;
+    margin-left:8%;
+    margin-bottom:8%;
+}
+.column img{
+    max-width: 100%;
+}
+.column video{
+    max-width: 100%;
+    
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.content{
+    background-color:white;
+    padding:10px;
+}
+.vidInfo{
+   text-align: center;
+   margin-bottom:3%;
+}
+#open, #close{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        text-align: center;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      .row{
+          margin: 0;
+      }
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      #open{
+        display: block;
+        float: right;
+        padding-right: 10%;
+        padding-top:1%;
+        
+      }
+      #close{
+        display: block;
+      }
+      #logo{
+        width:200px;
+      }
+    .column{
+        width: 90%;
+    }
+    .vidInfo{
+        margin: 5px;
+        width: 90%;
+    }
+}

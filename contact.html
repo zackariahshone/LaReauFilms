@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/contact.css">
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    <script defer src="Jscript/email.js"></script>
+</head>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+
+<body>
+    <span id='open' style="font-size:30px;cursor:pointer; color:black;" onclick="openNav()">&#9776;</span>
+    <a href="index.html"><img id='logo' src="img/LaReauFilms_Logo.png" alt=""></a>
+    <div id="myNav" class="overlay">
+        <a id="close" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id='nav' class="menu">
+            <a href="studio.html">Our Work</a>
+            <a href="services.html">Services</a>
+            <a href="whoAmI.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+
+    <form id='form' action="#">
+        <div>
+            <div id="info">
+                <div id="fname">
+                    <label for="Fname" id="fname">First Name:</label>
+                    <input type="text" name="Fname" id="Fname">
+                </div>
+                <div>
+                    <label for="Lname">Last Name</label>
+                    <input type="text" name="Lname" id="Lname">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    </span><input type="number" name="Phone" id="Phone">
+                </div>
+
+                <div id="error"></div>
+                <div id="thts">
+                    <h5>Thoughts and Ideas</h5>
+                    <textarea name="thts" id="thts" cols="40" rows="10"></textarea>
+                </div>   
+                <div>
+                    <input style="margin: auto;" type="submit" value="Submit">
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </form>
+    </div>
+    <form method="post">
+		<input type="button" value="Send Email" onclick="sendEmail()"/>
+	</form>  
+    <script src="Jscript/contact.js"></script>
+</body>
+
+</html>

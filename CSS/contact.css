@@ -1,0 +1,145 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    
+    width: 10%;
+    height: auto;
+    margin-top: 10%;
+    
+    border-style: solid;
+    border-color: black;
+}
+
+textarea{
+    padding-left:20%;
+}
+.column{
+    background-color: green;
+    height: 100%;
+    width: 100px;
+    margin: 40%;
+    float: right;
+}
+form div{
+    padding-bottom: 30px;
+    text-align: left;
+    
+}
+
+.container{
+    padding: 0px;
+    margin: auto;
+    background-color:white;
+    width: 50%;
+}
+#info{
+padding-left: 90px;
+}
+#error{
+   color: red;
+   font-size: 12px;
+}
+.overlay{
+    text-align: right;
+}
+.menu{
+    border-style: solid;
+    border-bottom: black;
+    text-align: right;
+    display:contents;
+}
+.menu a{
+    color: #FFDA4A;
+    text-align: right;
+    text-decoration: none;
+    margin-right: 7%;
+}
+#open{
+    display: none;
+  }
+  #close{
+    display: none;
+  }
+  #logo{
+    width: 250px;
+   margin-left:3%;
+    padding-top:20px;
+  }
+
+@media screen and (max-width: 800px){
+    form{
+        width: 100%;
+        padding: 0px;
+    }
+    
+    #logo{
+        width:200px;
+      }
+      .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        text-align: center;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        text-align: center;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      #open{
+        display: block;
+        float: right;
+        padding-right: 10%;
+        padding-top:1%;
+        
+      }
+      #close{
+        display: block;
+      }
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+      }
+    
+   
+    }
