@@ -82,10 +82,10 @@ body, html {
 /* box under video */
 .mochBox{
   margin:auto;
-  width: 70%;
+  width: 40%;
   background-color: black;
 }
-.mochBox video{
+.mochBox iframe{
   max-width: 100%;
 }
 /* footer style */
