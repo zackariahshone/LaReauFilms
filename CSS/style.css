@@ -82,7 +82,7 @@ body, html {
 /* box under video */
 .mochBox{
   margin:auto;
-  width: 40%;
+  width: 100%;
   
 }
 .mochBox iframe{
@@ -94,13 +94,17 @@ body, html {
   width:100%;
   height: inherit;
   text-align: center;
-
+ 
 }
 .footer a{
   font-size: 30px;
   text-decoration: none;
   color:white;
-  padding:15px;
+  padding-left:10%;
+  
+}
+.footer a:hover{
+  color:#FFDA4A;
 }
   
   @media only screen and (max-width: 800px){
