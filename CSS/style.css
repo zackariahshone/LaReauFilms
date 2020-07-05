@@ -83,10 +83,10 @@ body, html {
 .mochBox{
   margin:auto;
   width: 40%;
-  background-color: black;
+  
 }
 .mochBox iframe{
-  max-width: 100%;
+  width: 100%;
 }
 /* footer style */
 .footer{
