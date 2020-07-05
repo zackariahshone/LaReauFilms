@@ -103,9 +103,7 @@ h1{
       .overlay a:hover, .overlay a:focus {
         color: #f1f1f1;
       }
-      .row{
-          margin: 0;
-      }
+     
       .overlay .closebtn {
         position: absolute;
         top: 20px;
@@ -127,6 +125,7 @@ h1{
       }
     .column iframe{
         width: 90%;
+       
     }
     .vidInfo{
         margin: 5px;
