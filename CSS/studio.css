@@ -36,16 +36,14 @@ h1{
 }
 
 .row{
-    margin: 8px -16px;
+    margin: 8px;
     width:95%;
     
 }
-.column{
+.column iframe{
     float:left;
     width: 41%;
-    height: fit-content;
     padding: 0;
-    background-color: black;
     margin-left:8%;
     margin-bottom:8%;
 }
@@ -127,7 +125,7 @@ h1{
       #logo{
         width:200px;
       }
-    .column{
+    .column iframe{
         width: 90%;
     }
     .vidInfo{
