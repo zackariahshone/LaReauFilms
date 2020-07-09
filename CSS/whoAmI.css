@@ -4,6 +4,7 @@
   body, html {
       font-family: sans-serif;    
       background-color: gray;
+      background-image: url('../img/aboutBG.png');
   }
 .opening{
     text-align: center;

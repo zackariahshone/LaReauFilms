@@ -6,11 +6,8 @@
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       color:#d6bd6d;
-      background-color: gray;
-     
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      background-image: url('../img/ourworkBG.png');
+      background-attachment: fixed;
     }
     #open, #close{
       display: none;

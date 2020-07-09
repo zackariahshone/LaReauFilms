@@ -3,7 +3,7 @@
 }
 body {
   font-family: Verdana, sans-serif;
-  background-color: gray;
+  background-image: url('../img/servicesBG.png');
   margin: 0;
 }
 .menu{
@@ -31,6 +31,7 @@ margin-right: 7%;
   color:#FFDA4A;
 }
 .service{
+  color:white;
   text-align: center;
   margin: auto;
 }
