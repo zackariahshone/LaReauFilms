@@ -4,9 +4,11 @@
 body, html {
     height: 0;
     margin: 0;
-    color:#FFDA4A;
+    color:#e0b401;
     font-family: Arial, Helvetica, sans-serif;
     background-image:url('../img/indexBG.png');
+    
+    background-size: cover;
   }
   /* styles the top left logo */
   #logo{
@@ -45,7 +47,7 @@ body, html {
   }
  
 .menu a{
-  color: #FFDA4A;
+  color: #e0b401;
   text-align: right;
   text-decoration: none;
   margin-right: 7%;
