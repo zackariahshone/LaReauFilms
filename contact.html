@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="CSS/contact.css">
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     
-    <script defer src="Jscript/email.js"></script>
+    
+   
 </head>
 <script>
     function openNav() {
@@ -18,7 +19,23 @@
     function closeNav() {
         document.getElementById("myNav").style.width = "0%";
     }
-</script>
+    
+    $('#send').click(function(){
+        console.log('button clicked');
+        
+        const sgMail = require('@sendgrid/mail');
+        sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+        const msg = {
+            to: 'stachesites@gmail.com',
+            from: 'stachesites@gmail.com',
+            subject: 'Sending with Twilio SendGrid is Fun',
+            text: 'and easy to do anywhere, even with Node.js',
+            html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+        };
+        sgMail.send(msg);
+    });
+    
+    </script>
 
 <body>
     <span id='open' style="font-size:30px;cursor:pointer; color:black;" onclick="openNav()">&#9776;</span>
@@ -38,8 +55,8 @@
     
     <h4>Your can reach us at 555.5555.5555 or email us at info@.lareaufilms.com</h4>
 </div>
-       
-    <script src="Jscript/contact.js"></script>
+       <button id = 'send'> send email</button>
+    
 </body>
 
 </html>
