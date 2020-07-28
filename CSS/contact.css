@@ -12,20 +12,7 @@ h1{
   text-align: center;
   font-size: 35px;
 }
-form{
-    
-    width: 50%;
-    height: auto;
-    margin-top: 10%;
-    margin-left: 25%;
-    border-style: solid;
-    border-color: black;
- 
-}
 
-textarea{
-    padding-left:20%;
-}
 .column{
     background-color: green;
     height: 100%;
@@ -33,17 +20,19 @@ textarea{
     margin: 40%;
     float: right;
 }
-form div{
-    padding-bottom: 30px;
-    padding: 30px 0 0 10%;
-    
+
+.jumbotron{
+  padding: 0;
 }
 
 .container{
     padding: 0px;
-    margin: auto;
+    margin: 10px auto;
     background-color:white;
     width: 50%;
+    /* border-radius: 10px; */
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
 }
 
 #error{
