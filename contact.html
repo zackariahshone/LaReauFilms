@@ -20,21 +20,7 @@
         document.getElementById("myNav").style.width = "0%";
     }
     
-    $('#send').click(function(){
-        console.log('button clicked');
-        
-        const sgMail = require('@sendgrid/mail');
-        sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-        const msg = {
-            to: 'stachesites@gmail.com',
-            from: 'stachesites@gmail.com',
-            subject: 'Sending with Twilio SendGrid is Fun',
-            text: 'and easy to do anywhere, even with Node.js',
-            html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-        };
-        sgMail.send(msg);
-    });
-    
+
     </script>
 
 <body>
@@ -49,14 +35,31 @@
             <a href="contact.html">Contact</a>
         </div>
     </div>
-    <div class="header">
-        <h1>Contact</h1>
-   
-    
-    <h4>Your can reach us at 555.5555.5555 or email us at info@.lareaufilms.com</h4>
-</div>
-       <button id = 'send'> send email</button>
-    
+    <div class="container">
+
+        <div class="header">
+            <div class="jumbotron">
+                <h1 class="display-4">Title</h1>
+                <p class="lead">Subtitle</p>
+                <hr class="my-4">
+                <p>Content</p>
+            </div>
+            <h1>Contact</h1>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                </div>
+              </div>
+            
+            
+        </div>
+        <button id = 'send'> send email</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
