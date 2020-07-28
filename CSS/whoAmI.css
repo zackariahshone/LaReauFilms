@@ -12,10 +12,10 @@
 }
 .menu{
     text-align: right;
-    color:#FFDA4A;
+    color:rgb(255, 210, 70);
   }
   .menu a{
-  color:#FFDA4A;
+  color:rgb(255, 210, 70);
   text-align:right;
   text-decoration: none;
   margin-right: 7%;
@@ -33,7 +33,7 @@
   }
   .contact{
       text-align:center;
-      color:#FFDA4A;
+      color:rgb(255, 210, 70);
   }
 #logo{
     width: 250px;
@@ -48,7 +48,7 @@
     display: none;
   }
   #service{
-    color:#FFDA4A;
+    color:rgb(255, 210, 70);
   }
 @media only screen and (max-width: 800px){
     .conatiner img{

@@ -1,61 +1,75 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: Verdana, sans-serif;
   background-image: url('../img/servicesBG.png');
   background-attachment: fixed;
   margin: 0;
 }
-.menu{
+
+.menu {
   text-align: right;
-  color:#FFDA4A;
+  color: rgb(255, 210, 70);
+
 }
-.menu a{
-color:#FFDA4A;
-text-align:right;
-text-decoration: none;
-margin-right: 7%;
+
+.menu a {
+  color: rgb(255, 210, 70);
+  text-align: right;
+  text-decoration: none;
+  margin-right: 7%;
 }
-#logo{
+
+#logo {
   width: 250px;
-  margin-left:3%;
-  padding-top:20px;
+  margin-left: 3%;
+  padding-top: 20px;
 }
-#open{
+
+#open {
   display: none;
 }
-#close{
+
+#close {
   display: none;
 }
-#service{
-  color:#FFDA4A;
+
+#service {
+  color: rgb(255, 210, 70);
 }
-.service{
-  color:white;
+
+.service {
+  color: white;
   text-align: center;
   margin: auto;
 }
-.service p{
+
+.service p {
   padding-bottom: 5%;
   font-size: 25px;
 }
-.service h1{
+
+.service h1 {
   font-size: 40px;
   padding: 0;
 }
-.contact{
-  color: #FFDA4A;
+
+.contact {
+  color: rgb(255, 210, 70);
   text-align: center;
   font-size: 25px;
   padding-bottom: 10px;
 }
-.contact button{
+
+.contact button {
   font-size: 25px;
 }
-@media only screen and (max-width: 800px){
- 
-  
+
+@media only screen and (max-width: 800px) {
+
+
   .overlay {
     height: 100%;
     width: 0;
@@ -63,12 +77,12 @@ margin-right: 7%;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
   }
-  
+
   .overlay-content {
     position: relative;
     top: 25%;
@@ -76,7 +90,7 @@ margin-right: 7%;
     text-align: center;
     margin-top: 30px;
   }
-  
+
   .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -86,29 +100,33 @@ margin-right: 7%;
     transition: 0.3s;
     text-align: center;
   }
-  
-  .overlay a:hover, .overlay a:focus {
+
+  .overlay a:hover,
+  .overlay a:focus {
     color: #f1f1f1;
   }
-  
+
   .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
   }
-  #open{
+
+  #open {
     display: block;
     float: right;
     padding-right: 10%;
-    padding-top:1%;
-    
+    padding-top: 1%;
+
   }
-  #close{
+
+  #close {
     display: block;
   }
-  #logo{
-    width:200px;
+
+  #logo {
+    width: 200px;
   }
 
 }

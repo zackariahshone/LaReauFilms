@@ -6,7 +6,7 @@ body{
     color:white;
 }
 h1{
-  color:#FFDA4A;
+  color:rgb(255, 210, 70);
 }
 .header{
   text-align: center;
@@ -60,7 +60,7 @@ form div{
     display:contents;
 }
 .menu a{
-    color: #FFDA4A;
+  color:rgb(255, 210, 70);
     text-align: right;
     text-decoration: none;
     margin-right: 7%;

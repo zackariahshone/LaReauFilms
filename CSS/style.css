@@ -4,7 +4,7 @@
 body, html {
     height: 0;
     margin: 0;
-    color:#e0b401;
+    color:rgb(255, 210, 70);
     font-family: Arial, Helvetica, sans-serif;
     background-image:url('../img/indexBG.png');
     
@@ -47,10 +47,11 @@ body, html {
   }
  
 .menu a{
-  color: #e0b401;
+  color:rgb(255, 210, 70);;
   text-align: right;
   text-decoration: none;
   margin-right: 7%;
+  
 }
 /* main container style */
 .container{
@@ -85,11 +86,12 @@ body, html {
 /* box under video */
 .mochBox{
   margin:auto;
-  width: 100%;
+  width: 80%;
   
 }
 .mochBox iframe{
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 /* footer style */
 .footer{
@@ -107,7 +109,7 @@ body, html {
   
 }
 .footer a:hover{
-  color:#FFDA4A;
+  color:rgb(255, 210, 70);
 }
   
   @media only screen and (max-width: 800px){
