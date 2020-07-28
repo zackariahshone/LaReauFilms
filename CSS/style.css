@@ -36,9 +36,11 @@ body, html {
   /* only shows on mobile view*/
   #open{
     display: none;
+    color:rgb(255, 210, 70);
   }
   #close{
     display: none;
+    color:rgb(255, 210, 70);
   }
   /* displays on desktop/laptop */
   .hero-image .menu{
@@ -51,7 +53,7 @@ body, html {
   text-align: right;
   text-decoration: none;
   margin-right: 7%;
-  
+  font-size: 30px;
 }
 /* main container style */
 .container{

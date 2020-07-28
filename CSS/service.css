@@ -20,6 +20,8 @@ body {
   text-align: right;
   text-decoration: none;
   margin-right: 7%;
+  font-size: 30px;
+
 }
 
 #logo {
@@ -30,10 +32,12 @@ body {
 
 #open {
   display: none;
+  color:rgb(255, 210, 70);
 }
 
 #close {
   display: none;
+  color:rgb(255, 210, 70);
 }
 
 #service {
@@ -65,6 +69,7 @@ body {
 
 .contact button {
   font-size: 25px;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 800px) {

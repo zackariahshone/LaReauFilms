@@ -19,10 +19,14 @@
   text-align:right;
   text-decoration: none;
   margin-right: 7%;
+  font-size: 30px;
   }
   .main p{
       color:white;
       padding:0 10% 0 10%;
+      line-height: 30px;
+      font-weight: bold;
+      font-size: 20px;
   }
   .photo{
     padding-left:5%;
@@ -43,12 +47,18 @@
   }
   #open{
     display: none;
+    color:rgb(255, 210, 70);
   }
   #close{
     display: none;
+    color:rgb(255, 210, 70);
   }
   #service{
     color:rgb(255, 210, 70);
+  }
+  button{
+    font-size: 25px;
+    border-radius: 10px;
   }
 @media only screen and (max-width: 800px){
     .conatiner img{
