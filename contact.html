@@ -6,40 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <!-- <script src="Jscript/smtpEmail.js"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/contact.css">
-
-
-
-
-</head>
-<script>
-    function openNav() {
-        document.getElementById("myNav").style.width = "100%";
+        
+        
+        
+        
+    </head>
+    <script>
+        
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
     }
-
+    
     function closeNav() {
         document.getElementById("myNav").style.width = "0%";
     }
-    $('#send').click(function(){
-        const userEmail = $('#email').val();
-        const emailContent = $('#content').val();
-    console.log('Email: ' + userEmail);
-    console.log('emailContent: ' + emailContent);
+    //  $('#send').click(function(){
+        //     const userEmail = $('#email').val();
+        //     const emailContent = $('#content').val();
+        // console.log('Email: ' + userEmail);
+        // console.log('emailContent: ' + emailContent);
 
-        Email.send({
-                SecureToken : "d3ed9c5d-7d09-4951-80ed-7b25cdd4fb32",
-                To : "lareaufilms@gmail.com",
-                From : userEmail,
-                Subject : "Intrested in working together",
-                Body : emailContent
-        }).then(
-                message => alert(message)
-                );
-        });
+        //     Email.send({
+            //             SecureToken : "d3ed9c5d-7d09-4951-80ed-7b25cdd4fb32",
+            //             To : "lareaufilms@gmail.com",
+            //             From : 'lareaufilms@gmail.com',
+            //             Subject : "Intrested in working together",
+            //             Body : emailContent
+            //     }).then(
+    //             message => alert(message)
+    //             );
+    //     });
 </script>
 
 <body>
@@ -55,20 +54,19 @@
         </div>
     </div>
     <div class="container">
-
+        
         <div class="header">
             <div class="jumbotron">
                 <h1 class="display-4">Contact</h1>
-            </div>
-            <div class="container">
-                <div class="form">
-
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Who Are You?"
+                <div class="container form-container">
+                    <div class="form">
+                        
+                        <div class="input-group mb-3">
+                        <input type="text" id='name' class="form-control" placeholder="Who Are You?"
                         aria-label="" aria-describedby="button-addon2">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Where are you reaching out from?"
+                        <input type="text" class="form-control" placeholder="Business Name"
                         aria-label="Where are you reaching out from?" aria-describedby="button-addon2">
                     </div>
                     <div class="input-group mb-3">
@@ -77,25 +75,28 @@
                     </div>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                         
+                            
                         </div>
-                        <textarea id = 'content' class="form-control" aria-label="With textarea"></textarea>
-                      </div>
+                        <textarea id = 'content' class="form-control" aria-label="With textarea" placeholder="How can we help?"></textarea>
+                    </div>
                     
-                    <div class="input-group-append">
+                    <div class="input-group-append justify-content-center">
                         <button class="btn btn-outline-secondary" type="button" id="send">Get in Touch</button>
                     </div>
-                   
+                </div>
+                    
                 </div>
             </div>
         </div>
     </div>
-
-
+    
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Jscript/smtpEmail.js"></script>
 </body>
 
 </html>
