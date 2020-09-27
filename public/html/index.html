@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="/public/Jscript/home.js"></script> -->
+    <link rel="stylesheet" href="https://use.typekit.net/phq2rks.css"> 
+    <link rel="stylesheet" href="../assets/CSS/style.css">
+    <title>LaReau Productions</title>
+</head>
+<script>
+    $(document).ready(function () {
+
+        $(".hero-image").hide().fadeIn(1500);
+    });
+
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0";
+        $()
+        //newMenu.style.textAlign(right, top); 
+        //menu.style.width = "0%";
+    }
+
+</script>
+
+<body>
+
+    <div class="hero-image">
+        <span id='open' style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+        <a href="index.html"><img id='logo' src="../assets/img/LaReauFilms_Logo.png" alt=""></a><!-- LaReauFilms_Logo.png -->
+        <div id="myNav" class="overlay">
+            <a id="close" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id='nav' style="text-align: right;" class="menu">
+                <a href="studio.html">Our Work</a>
+                <a href="services.html">Services</a>
+                <a href="whoAmI.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <p>LaReau Films is a New Orleans based
+                video production company. We are a
+                team of creators, technical wizards
+                and passionate storytellers.</p>
+        </div>
+        <div class="container">
+            <div class="mochBox">
+         
+                <div style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/320416893?title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                    </iframe>
+                </div><script src="https://player.vimeo.com/api/player.js"></script>
+                
+            </div>
+                
+
+            <h2 style="text-align: center;">Our Clients: </h2>
+            <div class="row">
+                <div class="clients">
+                    <img src="../assets/img/FullColorLogo.png" alt="FCLogo">
+                </div>
+                <div class="clients">
+                    <img src="../assets/img/alphaLogo.png" alt="alphaLogo">
+                </div>
+                <div class="clients">
+                    <img src="../assets/img/palominoLogo.png" alt="palaminoLogo">
+                </div>
+                <div class="clients">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="clients">
+                    <img src="../assets/img/sofabLogo.jpg" alt="sofabLogo">
+                </div>
+                <div class="clients">
+
+                    <img src="../assets/img/defenderLogo.png" alt="defenderLogo">
+                </div>
+                <div class="clients">
+                    <img src="../assets/img/tulaneLogo.png" alt="tulaneLogo">
+                </div>
+                <div class="clients">
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <a href="studio.html">Our Work</a>
+            <a href="services.html">Services</a>
+            <a href="whoAmI.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

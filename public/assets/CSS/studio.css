@@ -1,0 +1,192 @@
+@import url("https://use.typekit.net/phq2rks.css");
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+
+  color: rgb(255, 210, 70);
+  background-image: url('../img/ourworkBG.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+#open,
+#close {
+  display: none;
+  color: rgb(255, 210, 70);
+}
+
+#logo {
+  width: 250px;
+  margin-left: 3%;
+  padding-top: 20px;
+}
+
+.menu {
+  text-align: right;
+  color: rgb(255, 210, 70);
+  ;
+}
+
+.menu a {
+  color: rgb(255, 210, 70);
+  ;
+  text-align: right;
+  text-decoration: none;
+  margin-right: 7%;
+  font-size: 30px;
+
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: auto;
+  margin-left: 3.5%;
+  width: 95%;
+}
+
+iframe {
+  width: 100%;
+  height: 50%
+}
+
+.column {
+  float: left;
+  width: 46%;
+  padding: 0;
+  margin-left: 2%;
+  margin-bottom: 3%;
+}
+
+.column img {
+  max-width: 100%;
+}
+
+.column video {
+  max-width: 100%;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.vidInfo {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.lastVid {
+  margin-right: -20%;
+}
+
+button {
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  iframe {
+    height: 100%;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+  }
+
+  .lastVid {
+    margin: auto;
+    width: 95%;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  #open {
+    display: block;
+    float: right;
+    padding-right: 10%;
+    padding-top: 1%;
+
+  }
+
+  #close {
+    display: block;
+  }
+
+  #logo {
+    width: 200px;
+  }
+
+  .column {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3%;
+  }
+
+  .vidInfo {
+    margin: 5px;
+    width: 90%;
+  }
+
+  .row {
+    margin-left: 7%;
+  }
+
+}
