@@ -1,0 +1,29 @@
+{
+  "name": "lareaufilms",
+  "version": "1.0.0",
+  "description": "a site to debut the filmitography skills of a friend ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zackariahshone/LaReauFilms.git"
+  },
+  "keywords": [
+    "film",
+    "cinimetography",
+    "art",
+    "visual"
+  ],
+  "author": "Zackariah M Shone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zackariahshone/LaReauFilms/issues"
+  },
+  "homepage": "https://github.com/zackariahshone/LaReauFilms#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
