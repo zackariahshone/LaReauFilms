@@ -62,8 +62,14 @@
     color:rgb(255, 210, 70);
   }
   button{
-    font-size: 25px;
     border-radius: 10px;
+    background-color: rgb(141, 94, 58);
+    opacity:70%;
+  }
+  a,button{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
   }
 @media only screen and (max-width: 800px){
     .conatiner img{

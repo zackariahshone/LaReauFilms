@@ -6,6 +6,11 @@ $(document).ready(function () {
         const userEmail = $('#email').val();
         const emailContent = $('#content').val();
         const name = $('#name').val();
+
+        if(userEmail === ''|| name === ''){
+            alert('User Name or Email is Empty');
+        }
+
 console.log('Email: ' + userEmail);
 console.log('emailContent: ' + emailContent);
         
@@ -26,7 +31,7 @@ console.log('emailContent: ' + emailContent);
                name.text('');
             }
         });
-  
+       
         });
     });
     // $('#email').val("You should hear from us soon!")
