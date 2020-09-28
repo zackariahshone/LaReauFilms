@@ -4,7 +4,7 @@ const app = express();
 const routes = require('./routes/routes.js');
 require("./routes/htmlroutes.js")(app);
 app.use(express.urlencoded({
-    extend: true
+    extended: true
 }));
 app.use(express.json());
 

@@ -1,8 +1,8 @@
 $(document).ready(function () {  
-    
+
 
     $('#send').click(function(e){
-     e.preventDefault();
+        
         const userEmail = $('#email').val();
         const emailContent = $('#content').val();
         const name = $('#name').val();
@@ -14,14 +14,16 @@ console.log('emailContent: ' + emailContent);
             emailBody: emailContent, 
             userName: name 
         }
-
+        console.log('from front end', userInfo);
         $.ajax({
             type:"POST",
             url: "/sendmail",
             data: userInfo,
             dataType: "dataType",
             success: function (response) {
-                
+               userEmail.text("")
+               emailContent.text('')
+               name.text('');
             }
         });
   
