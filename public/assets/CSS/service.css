@@ -13,7 +13,7 @@ body {
   background-image: url('../img/servicesBG.png');
   background-attachment: fixed;
   margin: 0;
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
   font-family: futura-pt, sans-serif;
     font-weight: 500;
@@ -80,8 +80,8 @@ body {
 
 .contact button {
   border-radius: 10px;
-  background-color: rgb(141, 94, 58);
-  opacity:70%;
+  background-color: rgb(230, 122, 122);
+  opacity:80%;
 }
 a,button{
   text-decoration: none;
