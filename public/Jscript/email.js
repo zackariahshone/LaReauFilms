@@ -7,6 +7,10 @@ $(document).ready(function () {
         const emailContent = $('#content').val();
         const name = $('#name').val();
 
+        $('#email').val(" ");
+        $('#content').val('')
+        $('#name').val('');
+
         if(userEmail === ''|| name === ''){
             alert('User Name or Email is Empty');
         }
@@ -25,11 +29,12 @@ console.log('emailContent: ' + emailContent);
             url: "/sendmail",
             data: userInfo,
             dataType: "dataType",
-            success: function (response) {
-               userEmail.text("")
-               emailContent.text('')
-               name.text('');
+            success: function (res) {
+                console.log('resssss ', res);
+                console.log('success!')
+                alert('Your email has been recieved, we should be in contact shortly! \n Ragards, ')
             }
+              
         });
        
         });
