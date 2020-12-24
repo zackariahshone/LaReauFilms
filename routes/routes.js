@@ -28,7 +28,7 @@ const nodemailer = require("nodemailer");
     transporter.sendMail({
     from: email, 
     to: '<lareaufilms@gmail.com>',
-    subject: "From www.lareaufilms.com: " + userName + 'wants to talk', // Subject line
+    subject: "From www.lareaufilms.com: " + userName + ' wants to talk.', // Subject line
     text: emailBody, 
   }); 
 
